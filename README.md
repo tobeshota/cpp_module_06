@@ -1,4 +1,4 @@
-# CPP MODULE 05
+# CPP MODULE 06
 
 # Test
 各エクササイズにはテストファイルが存在します．
