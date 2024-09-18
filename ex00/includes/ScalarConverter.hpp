@@ -8,6 +8,10 @@
 class ScalarConverter {
  private:
   ScalarConverter();  // Constructor private to prevent instantiation
+  ScalarConverter(const ScalarConverter& other);
+  ScalarConverter& operator=(const ScalarConverter& other);
+  ~ScalarConverter();
+
  public:
   static int convert(const std::string& input);
 };
