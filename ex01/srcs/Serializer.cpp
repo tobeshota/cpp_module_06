@@ -20,6 +20,13 @@ Serializer::~Serializer() {
   std::cout << "(destructor)Serializer destructor called" << std::endl;
 }
 
+/**reinterpret_cast 演算子
+ * @brief
+ * ポインターが他のポインター型に変換されることを許可します．
+ * また，整数型から任意のポインター型への変換およびその逆の変換を許可します．
+ * @cite
+ * https://learn.microsoft.com/ja-jp/cpp/cpp/reinterpret-cast-operator?view=msvc-170
+ */
 uintptr_t Serializer::serialize(Data* ptr) {
   return reinterpret_cast<uintptr_t>(ptr);
 }
