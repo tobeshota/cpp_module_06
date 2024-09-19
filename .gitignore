@@ -5,6 +5,7 @@
 
 # output files
 *.out
+convert
 
 # object files
 *.o
