@@ -7,6 +7,8 @@
 #include <limits>  // for detect overflow or special value
 #include <sstream>
 
+#include "Utils.hpp"
+
 enum TYPE { PSEUDO, CHAR, INT, FLOAT, DOUBLE, INVALID };
 
 typedef struct s_convertedInput {

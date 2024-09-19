@@ -10,6 +10,8 @@
   ("usage: ./" + getExecutableNameFromMakefile(MAKEFILE_PATH) + \
    " <literalToConvert>\n")
 
+bool isFractionalPartZero(float f);
+bool isFractionalPartZero(double d);
 std::string getExecutableNameFromMakefile(const std::string& makefilePath);
 
 #endif

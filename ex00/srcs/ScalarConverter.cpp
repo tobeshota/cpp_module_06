@@ -105,7 +105,8 @@ std::string ScalarConverter::getAsFloat(float f) {
   else if (std::isnan(f))
     return "nanf";
   std::ostringstream oss;
-  oss << std::fixed << std::setprecision(1);  //  format with 1 decimal place
+  if (isFractionalPartZero(f))
+    oss << std::fixed << std::setprecision(1);  //  format with 1 decimal place
   oss << f;
   return oss.str() + "f";
 }
@@ -116,7 +117,8 @@ std::string ScalarConverter::getAsDouble(double d) {
   else if (std::isnan(d))
     return "nan";
   std::ostringstream oss;
-  oss << std::fixed << std::setprecision(1);  //  format with 1 decimal place
+  if (isFractionalPartZero(d))
+    oss << std::fixed << std::setprecision(1);  //  format with 1 decimal place
   oss << d;
   return oss.str();
 }
