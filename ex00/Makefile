@@ -6,11 +6,11 @@
 #    By: tobeshota <tobeshota@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/12 09:34:52 by tobeshota         #+#    #+#              #
-#    Updated: 2024/09/13 13:03:53 by tobeshota        ###   ########.fr        #
+#    Updated: 2024/09/19 15:44:33 by tobeshota        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	a.out
+NAME		=	convert
 CC			=	c++
 FLAGS		=	-Wall -Wextra -Werror -std=c++98 -pedantic-errors
 RM			=	rm -rf
