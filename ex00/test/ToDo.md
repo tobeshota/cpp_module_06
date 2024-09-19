@@ -1,4 +1,4 @@
-# CPP MODULE 0X EX0X TEST
+# CPP MODULE 06 EX00 TEST
 
 ### ScalarConverterTest
 - [x] ScalarConverterクラスが存在する
