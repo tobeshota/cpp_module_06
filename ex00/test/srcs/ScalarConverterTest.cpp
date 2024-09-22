@@ -32,9 +32,9 @@ TEST(FloatInputTest, DecimalNumberTest) {
 
 
 // Overflow
-TEST(IntInputTest, CharUnprintableTest) {
+TEST(IntInputTest, IntUnprintableTest) {
   // 2147483648 == INT_MAX(2147483647) + 1
-  capturedConvertStdoutTest("2147483648", "char: Non displayable\nint: overflow\nfloat: 2147483648.0f\ndouble: 2.14748e+09\n");
+  capturedConvertStdoutTest("2147483648", "char: Non displayable\nint: overflow\nfloat: 2.14748e+09f\ndouble: 2.14748e+09\n");
   // -2147483649 == INT_MIN(-2147483648) - 1
   capturedConvertStdoutTest("-2147483649", "char: Non displayable\nint: overflow\nfloat: -2147483648.0f\ndouble: -2.14748e+09\n");
 }

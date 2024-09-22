@@ -6,6 +6,7 @@
 #include <iostream>
 #include <limits>  // for detect overflow or special value
 #include <sstream>
+#include <cmath>
 
 #include "Utils.hpp"
 

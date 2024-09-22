@@ -105,7 +105,7 @@ std::string ScalarConverter::getAsFloat(float f) {
   else if (std::isnan(f))
     return "nanf";
   std::ostringstream oss;
-  if (isFractionalPartZero(f))
+  if (isDecimalPartisZero(f))
     oss << std::fixed << std::setprecision(1);  //  format with 1 decimal place
   oss << f;
   return oss.str() + "f";
@@ -117,7 +117,7 @@ std::string ScalarConverter::getAsDouble(double d) {
   else if (std::isnan(d))
     return "nan";
   std::ostringstream oss;
-  if (isFractionalPartZero(d))
+  if (isDecimalPartisZero(d))
     oss << std::fixed << std::setprecision(1);  //  format with 1 decimal place
   oss << d;
   return oss.str();
@@ -160,8 +160,8 @@ t_convertedInput ScalarConverter::getConvertedInput(const std::string& input,
       if (input == "nan" || input == "nanf") {
         ci._asChar = "impossible";
         ci._asInt = "impossible";
-        ci._asFloat = getAsFloat(std::nanf(""));
-        ci._asDouble = getAsDouble(std::nan(""));
+        ci._asFloat = getAsFloat(nanf(""));
+        ci._asDouble = getAsDouble(nan(""));
       } else if (input == "+inf" || input == "+inff") {
         ci._asChar = "overflow";
         ci._asInt = "overflow";

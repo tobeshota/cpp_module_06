@@ -1,13 +1,13 @@
 #include "Utils.hpp"
 
-// 小数部が0に近いかを確認
-bool isFractionalPartZero(float f) {
-  return std::fabs(f - static_cast<int>(f)) < 1e-6;
+// 小数部が0であるか
+bool isDecimalPartisZero(float f) {
+  return (f == static_cast<int>(f));
 }
 
-// 小数部が0に近いかを確認
-bool isFractionalPartZero(double d) {
-  return std::fabs(d - static_cast<int>(d)) < 1e-6;
+// 小数部が0であるか
+bool isDecimalPartisZero(double d) {
+  return (d == static_cast<int>(d));
 }
 
 // 行からNAME=の後にある値を抽出する関数
