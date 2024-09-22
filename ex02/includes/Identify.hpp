@@ -1,8 +1,8 @@
 #ifndef IDENTIFY_HPP
 #define IDENTIFY_HPP
 
-#include <ctime>	// for time()
 #include <cstdlib>  // for rand()
+#include <ctime>    // for time()
 
 #include "A.hpp"
 #include "B.hpp"

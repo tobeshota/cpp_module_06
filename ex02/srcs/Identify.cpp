@@ -60,15 +60,15 @@ void identify(Base& p) {
   try {
     (void)dynamic_cast<A&>(p);
     std::cout << OBJECT_TYPE_IS_A_MSG << std::endl;
-  } catch (const std::bad_cast& e) {
+  } catch (const std::exception& e) {
     try {
       (void)dynamic_cast<B&>(p);
       std::cout << OBJECT_TYPE_IS_B_MSG << std::endl;
-    } catch (const std::bad_cast& e) {
+    } catch (const std::exception& e) {
       try {
         (void)dynamic_cast<C&>(p);
         std::cout << OBJECT_TYPE_IS_C_MSG << std::endl;
-      } catch (const std::bad_cast& e) {
+      } catch (const std::exception& e) {
         std::cout << UNKNOWN_OBJECT_MSG << std::endl;
       }
     }
