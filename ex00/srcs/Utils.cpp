@@ -1,14 +1,10 @@
 #include "Utils.hpp"
 
 // 小数部が0であるか
-bool isDecimalPartisZero(float f) {
-  return (f == static_cast<int>(f));
-}
+bool isDecimalPartisZero(float f) { return (f == static_cast<int>(f)); }
 
 // 小数部が0であるか
-bool isDecimalPartisZero(double d) {
-  return (d == static_cast<int>(d));
-}
+bool isDecimalPartisZero(double d) { return (d == static_cast<int>(d)); }
 
 // 行からNAME=の後にある値を抽出する関数
 static std::string extractNameValue(const std::string& line, std::size_t pos) {

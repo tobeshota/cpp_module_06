@@ -1,6 +1,8 @@
 #ifndef SERIALIZER_HPP
 #define SERIALIZER_HPP
 
+#include <stdint.h>  //  for using uintptr_t in c++98
+
 #include <iostream>
 
 typedef struct s_data {

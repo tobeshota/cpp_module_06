@@ -1,12 +1,12 @@
 #ifndef SCHALAR_CONVERTER_HPP
 #define SCHALAR_CONVERTER_HPP
 
+#include <cmath>
 #include <cstdlib>  // for std::strtol, std::strtof, std::strtod
 #include <iomanip>  // for std::fixed and std::setprecision
 #include <iostream>
 #include <limits>  // for detect overflow or special value
 #include <sstream>
-#include <cmath>
 
 #include "Utils.hpp"
 
